@@ -1,13 +1,7 @@
+// Arrow Function:
+
 let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const OddNumbers = function (array) {
-  const Numbers = []; 
-  for (const element of array) {
-    if (element % 2 !== 0) {
-        Numbers.push(element); 
-    }
-  }
-  return Numbers; 
-}
+const OddNumbers =  (array) => array.filter((element) => element % 2 !== 0);
 
 console.log(OddNumbers(array)); 

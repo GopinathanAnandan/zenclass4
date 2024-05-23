@@ -1,6 +1,8 @@
+// Arrow Function:
+
 const array = ["hello", "level", "world", "radar", "apple", "mom", "madam"];
 
-const palindrome = function(array){
+const palindrome = (array)=>{
     let result = [];
     for(let word of array){
         let inversion = word.split('').reverse().join('');

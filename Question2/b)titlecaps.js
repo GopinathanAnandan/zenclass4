@@ -1,13 +1,7 @@
-const logic = function(str) {
-    str = str.toLowerCase().split(' ');
-    for (var i = 0; i < str.length; i++) {
-        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
-    }
-    return str.join(' ');
-}
+// Arrow Function:
 
-const titleCap = function(stringArray) {
-    return stringArray.map(logic);
-}
+const logic = (str) => str.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+const titleCap = (stringArray) => stringArray.map(logic);
 
 console.log(titleCap(["MOBILE", "SOFTware", "system", "cOmPuTeR"]));
